@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header Section */
+.empowerment-header {
+    background-color: #004400;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empowerment-header-img{
+    width: 80px; /* Adjust the size of the logos */
+    height: 80px;
+    object-fit: contain; /* Ensures the image scales proportionally */
+    margin-left: 20px;
+}
+
+.empowerment-header h1 {
+    font-size: 3rem;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.welcome-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.welcome-section strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.8;
+    text-align: left; /* Justifies the paragraph text */
+}
+
+/* Beneficiaries Section */
+.beneficiaries-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center; /* Centers inline-block elements and text */
+}
+
+.beneficiaries-section a{
+    text-decoration: none;
+}
+
+.beneficiaries-box {
+    max-width: 100%; /* Ensures it doesn't overflow */
+    width: 90%; /* Adjust based on screen size */
+    margin: 0 auto 30px; /* Centers horizontally and adds bottom margin */
+    background-color: #cfe3d7;
+    padding: 20px 10px;
+    border-radius: 12px;
+}
+
+.beneficiaries-box h2 {
+    font-size: 6rem; /* Adjusted for responsiveness */
+    font-weight: bold;
+    color: #004400;
+    margin: 0;
+}
+
+.beneficiaries-box span {
+    display: block;
+    font-size: 2rem;
+    color: black;
+}
+
+.beneficiaries-section p {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
+    color: black;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Image Grid Styling */
+.image-grid-section {
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Profile Section */
+.profile-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    gap: 30%; /* Adjust the spacing between items */
+}
+
+.profile-image img {
+    width: 170%;
+    max-width: 800px; /* Limits the size of the image */
+    border-radius: 8px; /* Optional for rounded corners */
+}
+
+.profile-card-Na {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content */
+    text-align: center;
+    gap: 10px;
+}
+
+.profile-card-Na h2 {
+    font-size: 1.7rem;
+    color: #004400;
+    gap: 0px;
+}
+
+.profile-card-Na h3 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.profile-image-Na {
+    width: 150px; /* Logo size */
+    margin-bottom: 20px;
+}
+
+/* Profile Details */
+.profile-details {
+    margin-top: 30px;
+    color: #333;
+    text-align: center; /* Centers text */
+}
+
+.profile-details p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #004400; /* Dark green background */
+    color: #fff; /* White text */
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #68c947; /* Light green links */
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: 2.1;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff; /* Hover effect: white */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .empowerment-header-img{
+        width: 60px; /* Adjust the size of the logos */
+        height: 60px;
+    }
+    .empowerment-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .beneficiaries-box h2 {
+        font-size: 4rem; /* Smaller font size for tablets */
+    }
+    .beneficiaries-box span {
+        font-size: 1.8rem;
+    }
+
+    .welcome-section p,
+    .beneficiaries-section p {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .profile-card {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .profile-image img {
+        max-width: 300px; /* Reduce image size */
+    }
+
+    .profile-card-Na h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .profile-card-Na h3 {
+        font-size: 1rem;
+    }
+
+    .profile-details p {
+        font-size: 1.1rem;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .beneficiaries-box h2 {
+        font-size: 3rem; /* Smaller font size for mobile */
+    }
+    .beneficiaries-box span {
+        font-size: 1.5rem;
+    }
+    .beneficiaries-box {
+        width: 100%; /* Utilize full width on smaller screens */
+        padding: 15px 10px;
+    }
+    .beneficiaries-section p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .profile-image-Na {
+        width: 150px; /* Smaller logo on mobile */
+    }
+
+    .profile-card-Na h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile-card-Na h3 {
+        font-size: 0.9rem;
+    }
+
+    .profile-details p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
